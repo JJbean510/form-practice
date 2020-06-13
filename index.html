@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/index.css" type="text/css">
-    <title>Document</title>
+    <title>Age Required</title>
 </head>
 <body>
     <form method="POST" action="http://127.0.0.1:5500/index.html">
@@ -28,11 +28,55 @@
       <div id="radio">
         <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
         <br>
-        <input type="radio" id="recommend" name="recommend">
-        <label for="definitely">Definitely</label>
-        <label for="maybe">Maybe</label>
+        <input type="radio" id="definitely" name="review" value="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" id="maybe" name="review" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="not sure" name="review" value="not sure">
         <label for="not sure">Not Sure</label>
-      </div>  
+      </div>
+      <div id="dropdown">
+        <label for="favFeature">What is your favorite feature of freeCodeCamp?</label><br>
+        <select name="favFeature" id="favFeature">
+          <option value="select an option" selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open source">Open Source</option>
+        </select>
+      </div>
+      <div id="checkbox">
+        <label for="improv1">What would you like to see improved? <em>(Check all that apply)</em></label><br>
+        <input type="checkbox" id="improv1" name="improvements" value="front-end">
+        <label for="improv1">Front-End Projects</label><br>
+        <input type="checkbox" id="improv2" name="improvements" value="back-end">
+        <label for="improv2">Back-End Projects</label><br>
+        <input type="checkbox" id="improv3" name="improvements" value="data visualization">
+        <label for="improv3">Data Visualization</label><br>
+        <input type="checkbox" id="improv4" name="improvements" value="challenges">
+        <label for="improv4">Challenges</label><br>
+        <input type="checkbox" id="improv5" name="improvements" value="open source community">
+        <label for="improv5">Open Source Community</label><br>
+        <input type="checkbox" id="improv6" name="improvements" value="gitter help rooms">
+        <label for="improv6">Gitter help rooms</label><br>
+        <input type="checkbox" id="improv7" name="improvements" value="videos">
+        <label for="improv7">Videos</label><br>
+        <input type="checkbox" id="improv8" name="improvements" value="city meetups">
+        <label for="improv8">City Meetups</label><br>
+        <input type="checkbox" id="improv9" name="improvements" value="wiki">
+        <label for="improv9">Wiki</label><br>
+        <input type="checkbox" id="improv10" name="improvements" value="forum">
+        <label for="improv10">Forum</label><br>
+        <input type="checkbox" id="improv11" name="improvements" value="additional courses">
+        <label for="improv11">Additional Courses</label><br>
+      </div>
+      <div id="text-box">
+        <label for="text">Any comments or suggestions?</label><br>
+        <textarea id="text" rows="3" cols="80">Enter your comment here...</textarea><br>
+      </div>
+      <div id="submit">
+        <input type="submit">
+      </div>
     </form>
 </body>
 </html>
