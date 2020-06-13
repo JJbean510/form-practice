@@ -1,18 +1,31 @@
-body{
+body {
     background-image: url(./images/blue.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 form {
-    padding: 50px;
-    padding-left: 900px;
-    padding-right: 900px;
+    position: relative;
+    left: 35em;
+    right: 35em
+}
+
+#border {
+    height: 100%;
+    width: 22%;
     background: lightblue;
     background-clip: content-box;
+    font-size: 22px;
+    border: black solid;
+    border-radius: round;
 }
+
  /* use alignment class to center text */
 .alignment {
+}
+
+#name,#email,#age,#description,#favFeature {
+    width: 30em;
 }
 
 #head {
