@@ -7,8 +7,12 @@
     <title>Age Required</title>
 </head>
 <body>
+  <div id="head">
+    <h1>freeCodeCamp Survey Form</h1>
+    <em><h4>Thank you for taking the time to help us improve the platform</h4></em>
+  </div>
     <form method="POST" action="http://127.0.0.1:5500/index.html">
-      <div id="form">
+      <div id="form" class="alignment">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="email">Email</label><br>
@@ -25,7 +29,7 @@
             <option value="other">Other</option>
         </select>
       </div>
-      <div id="radio">
+      <div id="radio" class="alignment">
         <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
         <br>
         <input type="radio" id="definitely" name="review" value="definitely">
@@ -35,7 +39,7 @@
         <input type="radio" id="not sure" name="review" value="not sure">
         <label for="not sure">Not Sure</label>
       </div>
-      <div id="dropdown">
+      <div id="dropdown" class="alignment">
         <label for="favFeature">What is your favorite feature of freeCodeCamp?</label><br>
         <select name="favFeature" id="favFeature">
           <option value="select an option" selected>Select an option</option>
@@ -45,7 +49,7 @@
           <option value="open source">Open Source</option>
         </select>
       </div>
-      <div id="checkbox">
+      <div id="checkbox" class="alignment">
         <label for="improv1">What would you like to see improved? <em>(Check all that apply)</em></label><br>
         <input type="checkbox" id="improv1" name="improvements" value="front-end">
         <label for="improv1">Front-End Projects</label><br>
@@ -70,11 +74,11 @@
         <input type="checkbox" id="improv11" name="improvements" value="additional courses">
         <label for="improv11">Additional Courses</label><br>
       </div>
-      <div id="text-box">
+      <div id="text-box" class="alignment">
         <label for="text">Any comments or suggestions?</label><br>
-        <textarea id="text" rows="3" cols="80">Enter your comment here...</textarea><br>
+        <textarea id="text" rows="3" cols="70">Enter your comment here...</textarea><br>
       </div>
-      <div id="submit">
+      <div id="submit" class="alignment">
         <input type="submit">
       </div>
     </form>

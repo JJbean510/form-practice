@@ -1,0 +1,22 @@
+body{
+    background-image: url(./images/blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    padding: 50px;
+    padding-left: 900px;
+    padding-right: 900px;
+    background: lightblue;
+    background-clip: content-box;
+}
+ /* use alignment class to center text */
+.alignment {
+}
+
+#head {
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+}
