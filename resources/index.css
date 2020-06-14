@@ -6,26 +6,40 @@ body {
 
 form {
     position: relative;
-    left: 35em;
-    right: 35em
+    left: 30em;
+    right: 30em
 }
 
 #border {
     height: 100%;
-    width: 22%;
+    width: 31%;
     background: lightblue;
     background-clip: content-box;
+    opacity: .69;
     font-size: 22px;
-    border: black solid;
-    border-radius: round;
 }
 
  /* use alignment class to center text */
 .alignment {
+    padding: 1em;
+    padding-top: .75em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.alignment{
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 #name,#email,#age,#description,#favFeature {
-    width: 30em;
+    width: 40em;
+    height: 2em;
+}
+
+#submit{
+    text-align: center;
 }
 
 #head {
