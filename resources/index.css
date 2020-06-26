@@ -2,44 +2,46 @@ body {
     background-image: url(./images/blue.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 0px;
 }
 
 form {
     position: relative;
-    left: 30em;
-    right: 30em
+    left: 560px;
+    border: #59A96A solid;
+    border-radius: 10px;
 }
 
 #border {
-    height: 100%;
-    width: 31%;
-    background: lightblue;
+    width: 35%;
+    background: #B4E7CE;
     background-clip: content-box;
-    opacity: .69;
     font-size: 22px;
+    opacity: .85;
 }
-
- /* use alignment class to center text */
 .alignment {
     padding: 1em;
-    padding-top: .75em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    margin-left: 35px;
 }
 
-.alignment{
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-#name,#email,#age,#description,#favFeature {
-    width: 40em;
+.row-span {
+    width: 35em;
     height: 2em;
 }
 
-#submit{
-    text-align: center;
+#button {
+    margin-left: 58px;
+    margin-bottom: 20px;
+    width: 475px;
+    height: 3em;
+    background-color: green;
+    border: #59A96A;
+    border-radius: 5px;
+}
+#button:hover {
+    background-color: lightgreen;
 }
 
 #head {

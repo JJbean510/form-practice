@@ -14,13 +14,13 @@
     <form id="border" method="POST" action="http://127.0.0.1:5500/index.html">
       <div id="form" class="alignment">
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" value="Enter your name"><br>
+        <input class="row-span" type="text" id="name" name="name" value="Enter your name"><br>
         <label for="email">Email</label><br>
-        <input type="text" id="email" name="email" value="Enter your e-mail"><br>
+        <input class="row-span" type="text" id="email" name="email" value="Enter your e-mail"><br>
         <label for="age">Age(required)</label><br>
-        <input type="number" id="age" name="age" min="18" value="age" required><br>
+        <input class="row-span" type="number" id="age" name="age" min="18" value="age" required><br>
         <label for="description">Which option best describes your current role?</label><br>
-        <select name="description" id="description" >
+        <select class="row-span" name="description" id="description" >
             <option value="select current role" selected>Select current role</option>
             <option value="student">Student</option>
             <option value="full-time" job>Full-Time</option>
@@ -30,7 +30,7 @@
         </select>
       </div>
       <div id="radio" class="alignment">
-        <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+        <label for="recommend" class="questions">Would you recommend freeCodeCamp to a friend?</label>
         <br>
         <input type="radio" id="definitely" name="review" value="definitely">
         <label for="definitely">Definitely</label><br>
@@ -40,8 +40,8 @@
         <label for="not sure">Not Sure</label>
       </div>
       <div id="dropdown" class="alignment">
-        <label for="favFeature">What is your favorite feature of freeCodeCamp?</label><br>
-        <select name="favFeature" id="favFeature">
+        <label for="favFeature" class="questions">What is your favorite feature of freeCodeCamp?</label><br>
+        <select class="row-span" name="favFeature" id="favFeature">
           <option value="select an option" selected>Select an option</option>
           <option value="challenges">Challenges</option>
           <option value="projects">Projects</option>
@@ -50,7 +50,7 @@
         </select>
       </div>
       <div id="checkbox" class="alignment">
-        <label for="improv1">What would you like to see improved? <em>(Check all that apply)</em></label><br>
+        <label for="improv1" class="questions">What would you like to see improved?<em style="font-size: 16px;"> (Check all that apply)</em></label><br>
         <input type="checkbox" id="improv1" name="improvements" value="front-end">
         <label for="improv1">Front-End Projects</label><br>
         <input type="checkbox" id="improv2" name="improvements" value="back-end">
@@ -75,11 +75,10 @@
         <label for="improv11">Additional Courses</label><br>
       </div>
       <div id="text-box" class="alignment">
-        <label for="text">Any comments or suggestions?</label><br>
-        <textarea id="text" rows="7" cols="75">Enter your comment here...</textarea><br>
+        <label for="text" class="questions">Any comments or suggestions?</label><br>
+        <textarea id="text" rows="7" cols="62">Enter your comment here...</textarea><br>
       </div>
-      <div id="submit" class="alignment">
-        <input type="submit">
+      <button id="button">Submit</button>
       </div>
     </form>
 </body>
